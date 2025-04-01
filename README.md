@@ -1,6 +1,6 @@
 # Endless Soju Party!
 
-Endless Soju Party!はESP32-C3-MINI-1-N4を使用したBluetooth-シリアル変換基板です。
+Endless Soju Party!はESP32-C3-WROOM-02を使用したBluetooth-シリアル変換基板です。
 
 USB Type-Aのポートにそのまま差せるため、書き込みが容易です。
 
@@ -8,7 +8,7 @@ USB Type-Aのポートにそのまま差せるため、書き込みが容易で�
 
 |        機能         | 個数 | 備考                               |
 | :-----------------: | ---: | :--------------------------------- |
-|         MCU         |    1 | ESP32-C3-MINI-1-N4                 |
+|         MCU         |    1 | ESP32-C3-WROOM-02                  |
 |         CAN         |    1 | 電源ピンは5V、CAN FD対応           |
 |        UART         |    1 | 電源ピンは5V                       |
 |         USB         |    1 | 書き込み用                         |
