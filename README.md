@@ -14,6 +14,7 @@ Endless Soju Party!はESP32-C3-MINI-1-N4を使用したBluetooth-シリアル変
 | 5V-3.3Vレギュレータ |    1 | 外部電源からの供給用     |
 |     寸法(外形)      |      | 30mm x 57.5mm            |
 |   寸法(USB部以外)   |      | 30mm x 45mm              |
+|   寸法(固定穴間)    |      | 24.4mm                   |
 
 ## 名前の由来
 
