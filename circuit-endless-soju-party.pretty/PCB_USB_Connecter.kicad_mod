@@ -1,0 +1,177 @@
+(footprint "PCB_USB_Connecter"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "U2"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b10b7567-54a0-4b5e-8a69-7f915bf6082c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "52fd3d2e-7d40-4ca4-b967-a8bb059f63e7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "98776a09-fd94-4ada-9133-62e241565e76")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ee19a00f-6d06-44a1-a373-e7f920d014b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -7.655 -5.08)
+		(end -3.845 5.08)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "0b22d796-a4cf-480c-a5c7-e13360bfbe7f")
+	)
+	(fp_text user "D-"
+		(at -3.845 1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "39e77378-6037-4cbe-a113-245cebcf61f0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "VCC"
+		(at -4 -3.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "71339530-ce90-4f33-b165-d2d543def015")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "D+"
+		(at -3.845 -1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "b95e3810-91bc-4cb1-ab83-1c47821514c3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "GND"
+		(at -3.845 3.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "da879ea1-f2e9-4289-bc9a-2a1527c4a75a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "USB"
+		(at -7.45 0 270)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "e1dab112-7d33-48e6-bd17-ed147c77ad7a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+			(justify bottom)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -6.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "db83e346-44e9-4341-acf1-d4f4f8f7704a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" connect roundrect
+		(at 0 -3.75)
+		(size 7 2)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "a31ad38a-33c6-4993-9565-70094614a604")
+	)
+	(pad "2" connect roundrect
+		(at 0 -1)
+		(size 6 1.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "e93f115a-384b-434b-8a47-97c7cc6d9c6f")
+	)
+	(pad "3" connect roundrect
+		(at 0 1)
+		(size 6 1.5)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "270d8144-2998-4e90-8624-3ffbec46ec51")
+	)
+	(pad "4" connect roundrect
+		(at 0 3.75)
+		(size 7 2)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(thermal_bridge_angle 45)
+		(uuid "abf19f33-96c5-46a5-9855-882ba9c3c3ef")
+	)
+	(embedded_fonts no)
+)

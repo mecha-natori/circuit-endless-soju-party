@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "circuit-endless-soju-party")(type "KiCad")(uri "${KIPRJMOD}/circuit-endless-soju-party.pretty")(options "")(descr ""))
+)
