@@ -1,18 +1,19 @@
+NAME := circuit-endless-soju-party
 VER := 1
 
 .PHONY: all bom cpl garber
 
 all: bom cpl garber
 
-bom: circuit-endless-soju-party-bom-raw.csv
-	sed '/,""$$/d' circuit-endless-soju-party-bom-raw.csv >circuit-endless-soju-party-bom.csv
+bom: $(NAME)-bom-raw.csv
+	sed '/,""$$/d' $< >bom.csv
 
-cpl: circuit-endless-soju-party-all-pos.csv
-	sed '/^"[ ABE-QSTV-Z]/d' circuit-endless-soju-party-all-pos.csv >circuit-endless-soju-party-cpl.csv
-	sed -i '/PCB_USB/d' circuit-endless-soju-party-cpl.csv
+cpl: $(NAME)-all-pos.csv
+	sed '/^"[ ABE-QSTV-Z]/d' $< >cpl.csv
+	sed -i '/PCB_USB/d' cpl.csv
 	patch -p1 <cpl-rename-col.patch
 
-garber: out/circuit-endless-soju-party-B_Cu.gbl out/circuit-endless-soju-party-B_Mask.gbs out/circuit-endless-soju-party-B_Paste.gbp out/circuit-endless-soju-party-B_Silkscreen.gbo out/circuit-endless-soju-party-Edge_Cuts.gm1 out/circuit-endless-soju-party-F_Cu.gtl out/circuit-endless-soju-party-F_Mask.gts out/circuit-endless-soju-party-F_Paste.gtp out/circuit-endless-soju-party-F_Silkscreen.gto out/circuit-endless-soju-party-NPTH-drl_map.gbr out/circuit-endless-soju-party-NPTH.drl out/circuit-endless-soju-party-PTH-drl_map.gbr out/circuit-endless-soju-party-PTH.drl
-	zip -r circuit-endless-soju-party-v$(VER).zip out/
+garber: out/$(NAME)-B_Cu.gbl out/$(NAME)-B_Mask.gbs out/$(NAME)-B_Paste.gbp out/$(NAME)-B_Silkscreen.gbo out/$(NAME)-Edge_Cuts.gm1 out/$(NAME)-F_Cu.gtl out/$(NAME)-F_Mask.gts out/$(NAME)-F_Paste.gtp out/$(NAME)-F_Silkscreen.gto out/$(NAME)-NPTH-drl_map.gbr out/$(NAME)-NPTH.drl out/$(NAME)-PTH-drl_map.gbr out/$(NAME)-PTH.drl
+	zip $(NAME)-v$(VER).zip $^
 
 # vim: noet

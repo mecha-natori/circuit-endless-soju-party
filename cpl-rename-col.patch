@@ -1,5 +1,5 @@
---- a/circuit-endless-soju-party-cpl.csv
-+++ b/circuit-endless-soju-party-cpl.csv
+--- a/cpl.csv
++++ b/cpl.csv
 @@ -1 +1 @@
 -Ref,Val,Package,PosX,PosY,Rot,Side
 +"Designator","Val","Package","Mid X","Mid Y","Rotation","Layer"
